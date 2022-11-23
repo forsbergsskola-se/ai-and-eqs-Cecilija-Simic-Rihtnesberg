@@ -7,19 +7,19 @@
 #include "TestActor.generated.h"
 
 
-USTRUCT()
-struct FMyStruct1
-{
-	GENERATED_BODY()
-	//FMyStruct2 Var;
-};
-
-USTRUCT()
-struct FMyStruct2
-{
-	GENERATED_BODY()
-};
-
+// USTRUCT()
+// struct FMyStruct1
+// {
+// 	GENERATED_BODY()
+// 	//FMyStruct2 Var;
+// };
+//
+// USTRUCT()
+// struct FMyStruct2
+// {
+// 	GENERATED_BODY()
+// };
+//
 
 
 
@@ -30,7 +30,7 @@ class AIANDAQS_API ATestActor : public AActor
 	
 public:
 
-	void DrawSphere();
+	void DrawSphere(FVector Location, FColor Color);
 	
 	// Sets default values for this actor's properties
 	ATestActor();
