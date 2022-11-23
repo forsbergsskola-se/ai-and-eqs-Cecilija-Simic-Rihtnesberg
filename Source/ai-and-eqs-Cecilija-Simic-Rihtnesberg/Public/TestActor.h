@@ -30,6 +30,8 @@ class AIANDAQS_API ATestActor : public AActor
 	
 public:
 
+	UFUNCTION(BlueprintCallable, Category="GB_21 :) ")
+
 	void DrawSphere(FVector Location, FColor Color);
 	
 	// Sets default values for this actor's properties
