@@ -6,12 +6,32 @@
 #include "GameFramework/Actor.h"
 #include "TestActor.generated.h"
 
+
+USTRUCT()
+struct FMyStruct1
+{
+	GENERATED_BODY()
+	//FMyStruct2 Var;
+};
+
+USTRUCT()
+struct FMyStruct2
+{
+	GENERATED_BODY()
+};
+
+
+
+
 UCLASS()
 class AIANDAQS_API ATestActor : public AActor
 {
 	GENERATED_BODY()
 	
-public:	
+public:
+
+	void DrawSphere();
+	
 	// Sets default values for this actor's properties
 	ATestActor();
 
