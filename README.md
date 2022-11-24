@@ -1,6 +1,8 @@
 # ai-and-eqs-Cecilija-Simic-Rihtnesberg
 ai-and-eqs-Cecilija-Simic-Rihtnesberg created by GitHub Classroom
 
+![AI-and-eqs-13](https://user-images.githubusercontent.com/90723803/203860239-53d44fe3-561e-4357-a603-e1be608f7934.JPG)
+
 ![AI-and-eqs-6](https://user-images.githubusercontent.com/90723803/193419903-fcbbf36f-1c9a-495b-924c-d95d507c67bb.JPG)
 
 ![AI-and-eqs-5](https://user-images.githubusercontent.com/90723803/193419893-1c7fb8d2-c9e0-4292-8bf7-c01a75a7b9d9.JPG)
