@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "AIController.h"
 #include "GameFramework/Actor.h"
 #include "TestActor.generated.h"
 
@@ -24,7 +25,7 @@
 
 
 UCLASS()
-class AIANDAQS_API ATestActor : public AActor
+class AIANDAQS_API ATestActor : public AAIController
 {
 	GENERATED_BODY()
 	
