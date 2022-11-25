@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "AIController.h"
-#include "GameFramework/Actor.h"
+//#include "GameFramework/Actor.h"
 #include "TestActor.generated.h"
 
 
@@ -33,17 +33,17 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category="GB_21 :) ")
 
-	void DrawSphere(FVector Location, FColor Color);
+	void DrawSphereAtTargetDestination(FLinearColor Color, float Time);
 	
 	// Sets default values for this actor's properties
 	ATestActor();
 
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	
 
 };
