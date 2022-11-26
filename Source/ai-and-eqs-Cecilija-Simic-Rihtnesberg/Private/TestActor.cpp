@@ -9,7 +9,7 @@ void ATestActor::DrawSphereAtTargetDestination(FLinearColor Color, float Time)
 	FVector PathDestination = GetPathFollowingComponent()->GetPathDestination();
 	FNavPathSharedPtr Path = GetPathFollowingComponent()->GetPath();
 
-	FVector Location = A->GetActorLocation();
+	//FVector Location = A->GetActorLocation();
 	
 	DrawDebugSphere(GetWorld(), PathDestination, 100, 12, Color.ToFColorSRGB(), false, Time);
 }
