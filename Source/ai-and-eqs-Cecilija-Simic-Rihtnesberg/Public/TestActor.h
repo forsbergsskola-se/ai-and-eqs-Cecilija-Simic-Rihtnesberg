@@ -16,6 +16,7 @@ public:
 	
 	// Sets default values for this actor's properties
 	ATestActor();
+	ATestActor(const FObjectInitializer& ObjectInitializer);
 
 
 	// Called every frame
