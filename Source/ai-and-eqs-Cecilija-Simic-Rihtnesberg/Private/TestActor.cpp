@@ -4,24 +4,6 @@
 #include "TestActor.h"
 
 
-void ATestActor::DrawSphereAtTargetDestination(FLinearColor Color, float Time)
-{
-	FVector PathDestination = GetPathFollowingComponent()->GetPathDestination();
-	FNavPathSharedPtr Path = GetPathFollowingComponent()->GetPath();
-    if (!Path)
-    	return;
-
-	TArray<FNavPathPoint> PathPoints = Path->GetPathPoints();
-
-	
-
-	for (FNavPathPoint Point : PathPoints)
-	{
-		DrawDebugSphere(GetWorld(), Point, 60, 12, Color.ToFColorSRGB(), false, Time);
-	}
-	
-	
-}
 // Sets default values
 ATestActor::ATestActor()
 {
