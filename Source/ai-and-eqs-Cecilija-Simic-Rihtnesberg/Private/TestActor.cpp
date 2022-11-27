@@ -3,6 +3,8 @@
 
 #include "TestActor.h"
 
+#include "GP_PathFollowingCopmoment.h"
+
 
 // Sets default values
 ATestActor::ATestActor()
@@ -11,6 +13,12 @@ ATestActor::ATestActor()
 	PrimaryActorTick.bCanEverTick = true;
 
 }
+
+ATestActor::ATestActor(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer.SetDefaultSubobjectClass<UGP_PathFollowingCopmoment>(TEXT("PathFollowingComponent")))
+{
+	
+}
+
 
 // Called when the game starts or when spawned
 void ATestActor::BeginPlay()
