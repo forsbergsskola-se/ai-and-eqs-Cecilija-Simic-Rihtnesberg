@@ -14,10 +14,6 @@ void ATestActor::DrawSphereAtTargetDestination(FLinearColor Color, float Time)
 	TArray<FNavPathPoint> PathPoints = Path->GetPathPoints();
 
 	
-	for (int i = 0; i < PathPoints.Num(); i++)
-	{
-		DrawDebugSphere(GetWorld(), PathDestination, 100, 12, Color.ToFColorSRGB(), false, Time);
-	}
 
 	for (FNavPathPoint Point : PathPoints)
 	{
