@@ -14,7 +14,8 @@ ATestActor::ATestActor()
 
 }
 
-ATestActor::ATestActor(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer.SetDefaultSubobjectClass<UGP_PathFollowingCopmoment>(TEXT("PathFollowingComponent")))
+ATestActor::ATestActor(const FObjectInitializer& ObjectInitializer) :
+	Super(ObjectInitializer.SetDefaultSubobjectClass<UGP_PathFollowingCopmoment>(TEXT("PathFollowingComponent")))
 {
 	
 }
