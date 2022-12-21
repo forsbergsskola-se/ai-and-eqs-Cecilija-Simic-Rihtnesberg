@@ -34,10 +34,10 @@ void UGP_PathFollowingCopmoment::TickComponent(float DeltaTime, ELevelTick TickT
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	FLinearColor Color{ 0,255,15,1,};
-	Color.R = 0;
-	Color.G = 255;
-	Color.B = 15;
-	Color.A = 0; 
+	// Color.R = 0;
+	// Color.G = 255;
+	// Color.B = 15;
+	// Color.A = 0; 
 
 	DrawSphereAtTargetDestination(Color, DeltaTime);
 }
