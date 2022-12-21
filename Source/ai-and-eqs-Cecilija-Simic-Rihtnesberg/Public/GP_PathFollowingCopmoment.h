@@ -16,9 +16,17 @@ public:
 	// Sets default values for this component's properties
 	UGP_PathFollowingCopmoment();
 
+	/**
+	 * If true, shows debugs sphere for path
+	*/
+	
 	UPROPERTY(EditAnywhere, Category= "Debug 💜")
 	bool Debag;
 
+	/**
+	 * The color to debug
+	*/
+		
 	UPROPERTY(EditAnywhere, Category="Debug 💜💜")
 	FLinearColor DebugColor;
 	
@@ -31,6 +39,12 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType,
 	                           FActorComponentTickFunction* ThisTickFunction) override;
 
+
+	/**
+	 * @param Color Color to use
+	 * @param Time Time used to display spheres
+	*/
+	
 	UFUNCTION(BlueprintCallable)
 	void DrawSphereAtTargetDestination(FLinearColor Color, float Time);
 };
