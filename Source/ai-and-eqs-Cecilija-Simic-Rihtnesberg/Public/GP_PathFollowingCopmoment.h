@@ -16,6 +16,12 @@ public:
 	// Sets default values for this component's properties
 	UGP_PathFollowingCopmoment();
 
+	UPROPERTY(EditAnywhere, Category= "Debug 💜")
+	bool Debag;
+
+	UPROPERTY(EditAnywhere, Category="Debug 💜💜")
+	FLinearColor DebugColor;
+	
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
