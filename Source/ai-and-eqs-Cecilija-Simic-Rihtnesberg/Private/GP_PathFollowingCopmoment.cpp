@@ -3,6 +3,8 @@
 
 #include "GP_PathFollowingCopmoment.h"
 
+#include "StaticMeshAttributes.h"
+
 
 // Sets default values for this component's properties
 UGP_PathFollowingCopmoment::UGP_PathFollowingCopmoment()
@@ -31,7 +33,13 @@ void UGP_PathFollowingCopmoment::TickComponent(float DeltaTime, ELevelTick TickT
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	DrawSphereAtTargetDestination(FLinearColor{ 0,0,0,0,}, DeltaTime);
+	FLinearColor Color{ 0,255,15,1,};
+	Color.R = 0;
+	Color.G = 255;
+	Color.B = 15;
+	Color.A = 0; 
+
+	DrawSphereAtTargetDestination(Color, DeltaTime);
 }
 
 void UGP_PathFollowingCopmoment::DrawSphereAtTargetDestination(FLinearColor Color, float Time)
