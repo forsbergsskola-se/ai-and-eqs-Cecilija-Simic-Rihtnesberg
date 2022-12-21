@@ -39,7 +39,7 @@ void UGP_PathFollowingCopmoment::TickComponent(float DeltaTime, ELevelTick TickT
 	// Color.B = 15;
 	// Color.A = 0; 
 
-	DrawSphereAtTargetDestination(Color, DeltaTime);
+	DrawSphereAtTargetDestination(Color, .1);
 }
 
 void UGP_PathFollowingCopmoment::DrawSphereAtTargetDestination(FLinearColor Color, float Time)
